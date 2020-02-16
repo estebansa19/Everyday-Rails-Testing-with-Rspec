@@ -23,6 +23,11 @@ module Api
       end
     end
 
+    def last_project
+      @project = current_user.projects.last
+      render json: @project
+    end
+
     private
 
     def authenticate_user_from_token!

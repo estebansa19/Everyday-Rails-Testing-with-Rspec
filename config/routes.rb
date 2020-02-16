@@ -13,10 +13,18 @@ Rails.application.routes.draw do
         post :toggle
       end
     end
+
+    member do
+      patch :complete
+    end
   end
 
   namespace :api do
-    resources :projects#, only: [:index, :show, :create]
+    resources :projects do
+      collection do
+        get 'last', to: 'projects#last_project'
+      end
+    end
   end
 
   root "home#index"
