@@ -16,8 +16,10 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.6.0'
+  gem 'pry-rails', '~> 0.3.4'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
 end
 
 group :development do
@@ -26,6 +28,19 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'faker', require: false # for sample data in development
+  gem 'spring-commands-rspec'
+end
+
+group :test do
+  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'capybara', '~> 2.15.2'
+  gem 'chromedriver-helper'
+  gem 'launchy', '~> 2.4.3'
+  gem 'shoulda-matchers',
+    git: 'https://github.com/thoughtbot/shoulda-matchers.git',
+    branch: 'rails-5'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

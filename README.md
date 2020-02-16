@@ -1,4 +1,8 @@
-# *Everyday Rails Testing with RSpec* sample application (2017 edition)
+# *Everyday Rails Testing with RSpec
+
+A very nice and complete RSpec testing book for RoR.
+
+---
 
 Refer to the [Everyday Rails] blog for news on this edition of the book. You
 can find sample source for earlier editions in the [everydayrails
@@ -20,9 +24,3 @@ Using Git, you can check out each version by name. See details in the book.
 If you're not comfortable with Git, you can also use GitHub's handy branch/tag
 filter to select a specific tag and browse the source code online. To learn
 more about Git, I recommend the free resources [Git Immersion] or [Try Git].
-
-[Everyday Rails]: https://everydayrails.com
-[everydayrails organization]: https://github.com/everydayrails
-[Everyday Rails Testing with RSpec]: https://leanpub.com/everydayrailsrspec
-[Git Immersion]: http://gitimmersion.com/
-[Try Git]: http://www.codeschool.com/courses/try-git
